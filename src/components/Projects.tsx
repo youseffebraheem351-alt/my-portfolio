@@ -14,7 +14,7 @@ const projects = [
     title: "E-Commerce App",
     description: "Full-featured e-commerce platform with product listings, cart functionality, and user authentication.",
     image: projectEcommerce,
-    liveUrl: "https://ecommerce-app-phi-green.vercel.app/login",
+    liveUrl: "https://ecommerce-app-azure-rho.vercel.app/login",
     githubUrl: "https://github.com/youseffebraheem351-alt/ecommerce-app",
     tags: ["Angular", "TypeScript", "Bootstrap"],
   },
