@@ -72,13 +72,11 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
       transition={{ duration: 0.6, delay: index * 0.15 }}
       className="group"
     >
-      <a
-        href={project.liveUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block"
+      <div
+        onClick={() => window.open(project.liveUrl, "_blank", "noopener,noreferrer")}
+        className="block cursor-pointer"
       >
-        <div className="glass-card rounded-2xl overflow-hidden card-3d cursor-pointer">
+        <div className="glass-card rounded-2xl overflow-hidden card-3d">
           {/* Image Container */}
           <div className="relative h-56 overflow-hidden">
             <img
@@ -130,7 +128,7 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
             </div>
           </div>
         </div>
-      </a>
+      </div>
     </motion.div>
   );
 };
