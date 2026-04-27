@@ -6,8 +6,6 @@ import projectEcommerce from "@/assets/project-ecommerce.jpg";
 import projectShopping from "@/assets/project-shopping.jpg";
 import projectGames from "@/assets/project-games.jpg";
 import projectWeather from "@/assets/project-weather.jpg";
-import projectTodo from "@/assets/project-todo.jpg";
-import projectJquery from "@/assets/project-jquery.jpg";
 
 const projects = [
   {
@@ -43,20 +41,13 @@ const projects = [
     tags: ["Angular", "Weather API", "TypeScript"],
   },
   {
-    title: "Todo List",
-    description: "Productivity app with task management, filtering, and clean minimal interface design.",
-    image: projectTodo,
-    liveUrl: "https://todo-list-app-eight-vert.vercel.app/",
-    githubUrl: "https://github.com/youseffebraheem351-alt/todo-list-app",
-    tags: ["Angular", "TypeScript", "Local Storage", "CSS3"],
-  },
-  {
-    title: "jQuery Project",
-    description: "Interactive web application built with jQuery showcasing dynamic DOM manipulation and animations.",
-    image: projectJquery,
-    liveUrl: "https://jquery-project-lilac.vercel.app/",
-    githubUrl: "https://github.com/youseffebraheem351-alt",
-    tags: ["jQuery", "JavaScript", "CSS3"],
+    title: "DCineVault",
+    description: "Cinema-style hub for movies & TV: trending picks, fast search, and a clean watchlist experience.",
+    image:
+      "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1600&q=80",
+    liveUrl: "https://my-stream-list.vercel.app/Home",
+    githubUrl: "https://github.com/youseffebraheem351-alt/MyStreamList",
+    tags: ["Angular", "TypeScript", "Tailwind CSS", "Dark/Light Mode"],
   },
 ];
 

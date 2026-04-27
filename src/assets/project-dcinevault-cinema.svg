@@ -1,0 +1,110 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#070A12"/>
+      <stop offset="0.55" stop-color="#0A1020"/>
+      <stop offset="1" stop-color="#070913"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1260 220) rotate(135) scale(720 560)">
+      <stop stop-color="#00FFD5" stop-opacity="0.22"/>
+      <stop offset="0.45" stop-color="#8B5CFF" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="neon" x1="220" y1="160" x2="1380" y2="740" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00FFD5"/>
+      <stop offset="0.5" stop-color="#8B5CFF"/>
+      <stop offset="1" stop-color="#FF3EBF"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="16" result="b"/>
+      <feColorMatrix in="b" type="matrix"
+        values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 0.65 0" result="g"/>
+      <feMerge>
+        <feMergeNode in="g"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="48" fill="url(#bg)"/>
+  <rect width="1600" height="900" rx="48" fill="url(#spot)"/>
+
+  <!-- tiny stars -->
+  <g opacity="0.18" fill="#FFFFFF">
+    <circle cx="180" cy="140" r="2"/><circle cx="260" cy="210" r="1.8"/><circle cx="340" cy="160" r="1.4"/>
+    <circle cx="460" cy="120" r="1.6"/><circle cx="540" cy="210" r="1.2"/><circle cx="690" cy="150" r="1.5"/>
+    <circle cx="820" cy="120" r="1.4"/><circle cx="980" cy="170" r="1.2"/><circle cx="1120" cy="130" r="1.6"/>
+    <circle cx="1280" cy="190" r="1.4"/><circle cx="1460" cy="150" r="1.8"/>
+  </g>
+
+  <g filter="url(#softGlow)">
+    <rect x="120" y="150" width="1360" height="620" rx="40" fill="#FFFFFF" opacity="0.045" stroke="#FFFFFF" stroke-opacity="0.12"/>
+
+    <!-- Film strip left -->
+    <g opacity="0.95">
+      <rect x="165" y="205" width="260" height="510" rx="28" fill="#0B1020" stroke="#FFFFFF" stroke-opacity="0.12"/>
+      <rect x="185" y="230" width="220" height="130" rx="18" fill="#FFFFFF" opacity="0.06"/>
+      <rect x="185" y="378" width="220" height="130" rx="18" fill="#FFFFFF" opacity="0.06"/>
+      <rect x="185" y="526" width="220" height="169" rx="18" fill="#FFFFFF" opacity="0.06"/>
+      <g fill="#FFFFFF" opacity="0.20">
+        <rect x="172" y="230" width="10" height="28" rx="4"/>
+        <rect x="172" y="270" width="10" height="28" rx="4"/>
+        <rect x="172" y="310" width="10" height="28" rx="4"/>
+        <rect x="172" y="378" width="10" height="28" rx="4"/>
+        <rect x="172" y="418" width="10" height="28" rx="4"/>
+        <rect x="172" y="458" width="10" height="28" rx="4"/>
+        <rect x="172" y="526" width="10" height="28" rx="4"/>
+        <rect x="172" y="566" width="10" height="28" rx="4"/>
+        <rect x="172" y="606" width="10" height="28" rx="4"/>
+
+        <rect x="408" y="230" width="10" height="28" rx="4"/>
+        <rect x="408" y="270" width="10" height="28" rx="4"/>
+        <rect x="408" y="310" width="10" height="28" rx="4"/>
+        <rect x="408" y="378" width="10" height="28" rx="4"/>
+        <rect x="408" y="418" width="10" height="28" rx="4"/>
+        <rect x="408" y="458" width="10" height="28" rx="4"/>
+        <rect x="408" y="526" width="10" height="28" rx="4"/>
+        <rect x="408" y="566" width="10" height="28" rx="4"/>
+        <rect x="408" y="606" width="10" height="28" rx="4"/>
+      </g>
+    </g>
+
+    <!-- Clapperboard -->
+    <g transform="translate(520 250)">
+      <rect x="0" y="56" width="230" height="150" rx="22" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+      <path d="M12 58L218 58C226 58 230 62 230 70V90H0V70C0 62 4 58 12 58Z" fill="url(#neon)" opacity="0.92"/>
+      <path d="M28 75L62 56M78 75L112 56M128 75L162 56M178 75L212 56" stroke="#061018" stroke-width="10" stroke-linecap="round" opacity="0.7"/>
+      <rect x="24" y="122" width="182" height="16" rx="8" fill="#FFFFFF" opacity="0.10"/>
+      <rect x="24" y="152" width="142" height="16" rx="8" fill="#FFFFFF" opacity="0.08"/>
+    </g>
+
+    <!-- Right title -->
+    <text x="520" y="470" fill="#FFFFFF" font-size="92" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-weight="900" letter-spacing="1">
+      DCineVault
+    </text>
+    <text x="520" y="532" fill="#FFFFFF" opacity="0.78" font-size="34" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-weight="650">
+      Movies " TV Shows " Watchlist
+    </text>
+    <text x="520" y="590" fill="#FFFFFF" opacity="0.62" font-size="26" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-weight="520">
+      Discover, search, and save your next movie night.
+    </text>
+
+    <!-- neon badges -->
+    <g>
+      <rect x="520" y="640" width="150" height="44" rx="18" fill="#00FFD5" fill-opacity="0.14" stroke="#00FFD5" stroke-opacity="0.32"/>
+      <text x="562" y="670" fill="#00FFD5" font-size="18" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-weight="850">CINEMA</text>
+
+      <rect x="684" y="640" width="170" height="44" rx="18" fill="#8B5CFF" fill-opacity="0.14" stroke="#8B5CFF" stroke-opacity="0.32"/>
+      <text x="726" y="670" fill="#B9A0FF" font-size="18" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-weight="850">TRENDING</text>
+
+      <rect x="868" y="640" width="190" height="44" rx="18" fill="#FF3EBF" fill-opacity="0.14" stroke="#FF3EBF" stroke-opacity="0.32"/>
+      <text x="910" y="670" fill="#FF96DC" font-size="18" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-weight="850">DARK/LIGHT</text>
+    </g>
+
+    <path d="M520 612H1380" stroke="url(#neon)" stroke-width="6" stroke-linecap="round" opacity="0.55"/>
+  </g>
+</svg>
+

@@ -181,18 +181,6 @@ const Contact = () => {
             </form>
           </motion.div>
         </div>
-
-        {/* Footer */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-center mt-20 pt-10 border-t border-border"
-        >
-          <p className="text-muted-foreground">
-            © 2024 <span className="text-primary font-display">Yousef Ebraheem</span>. All rights reserved.
-          </p>
-        </motion.div>
       </div>
     </section>
   );

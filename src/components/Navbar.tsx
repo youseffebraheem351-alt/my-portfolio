@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, Moon, Sun, X } from "lucide-react";
+import { useTheme } from "@/hooks/useTheme";
 
 const navItems = [
   { name: "Home", href: "#home" },
@@ -12,6 +13,7 @@ const navItems = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -68,6 +70,22 @@ const Navbar = () => {
               Hire Me
             </a>
           </motion.li>
+
+          <motion.li
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+          >
+            <button
+              type="button"
+              onClick={toggleTheme}
+              className="glass hover-glow rounded-full p-2.5 text-foreground/80 hover:text-primary transition-colors"
+              aria-label="Toggle theme"
+              title={theme === "dark" ? "Switch to light" : "Switch to dark"}
+            >
+              {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
+          </motion.li>
         </ul>
 
         {/* Mobile Menu Button */}
@@ -86,6 +104,17 @@ const Navbar = () => {
             exit={{ opacity: 0, x: "100%" }}
             className="fixed inset-0 bg-background/95 backdrop-blur-lg md:hidden flex flex-col items-center justify-center gap-8"
           >
+            <button
+              type="button"
+              onClick={toggleTheme}
+              className="glass hover-glow rounded-full px-6 py-3 text-foreground flex items-center gap-3"
+              aria-label="Toggle theme"
+            >
+              {theme === "dark" ? <Sun size={22} /> : <Moon size={22} />}
+              <span className="font-display text-lg">
+                {theme === "dark" ? "Light Mode" : "Dark Mode"}
+              </span>
+            </button>
             {navItems.map((item) => (
               <a
                 key={item.name}

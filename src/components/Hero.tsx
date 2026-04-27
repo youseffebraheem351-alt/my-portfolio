@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
-import profileImage from "@/assets/Gemini_Generated_Image_lkbrf3lkbrf3lkbr.png";
+import profileImage from "@/assets/WhatsApp Image 2026-04-27 at 3.25.21 AM.jpeg";
 
 
 const Hero = () => {
