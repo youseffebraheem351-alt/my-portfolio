@@ -31,9 +31,7 @@ const Hero = () => {
               transition={{ delay: 0.2 }}
               className="inline-block glass px-4 py-2 rounded-full mb-6"
             >
-              <span className="text-primary font-medium">
-                ✦ Available for Hire
-              </span>
+              
             </motion.div>
 
             <motion.h1
