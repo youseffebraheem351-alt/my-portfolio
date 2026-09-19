@@ -33,12 +33,13 @@ const projects = [
     tags: ["Angular", "TypeScript","Tailwind CSS"],
   },
   {
-    title: "Weather App",
-    description: "Real-time weather application with location-based forecasts and beautiful UI visualizations.",
-    image: projectWeather,
-    liveUrl: "https://weather-app-six-orcin-52.vercel.app/",
-    githubUrl: "https://github.com/youseffebraheem351-alt/weather-app",
-    tags: ["Angular", "Weather API", "TypeScript"],
+    title: "FreshCart E-Commerce",
+    description: "Modern e-commerce application built with Angular, featuring authentication, product browsing, cart, wishlist, checkout, and a responsive UI.",
+    image:
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1600&q=80",
+    liveUrl: "https://freshcart-rouge-chi.vercel.app/login",
+    githubUrl: "https://github.com/youseffebraheem351-alt/ecommerce-app-phi-green",
+    tags: ["Angular", "TypeScript", "Bootstrap", "REST API"],
   },
   {
     title: "DCineVault",

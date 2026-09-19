@@ -67,18 +67,18 @@ const Contact = () => {
                   </div>
                 </a>
 
-                <div className="flex items-center gap-4 p-4 glass rounded-xl">
-                  <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center">
+                <div className="flex items-center gap-4 p-4 glass rounded-xl hover-glow transition-all group">
+                  <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center group-hover:scale-110 transition-transform">
                     <MapPin className="text-secondary" size={24} />
                   </div>
                   <div>
                     <p className="text-muted-foreground text-sm">Location</p>
-                    <p className="text-foreground font-medium">Assiut, Egypt</p>
+                    <p className="text-foreground font-medium">Damietta, Egypt</p>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4 p-4 glass rounded-xl">
-                  <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
+                <div className="flex items-center gap-4 p-4 glass rounded-xl hover-glow transition-all group">
+                  <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center group-hover:scale-110 transition-transform">
                     <Phone className="text-accent" size={24} />
                   </div>
                   <div>
